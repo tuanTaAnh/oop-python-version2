@@ -71,5 +71,5 @@ class ServiceDetail:
         self.total_price = total_price
 
 
-    def get_infor(self):
+    def __str__(self):
         return self.serdetID + "," + self.serticID + "," + self.serviceID + "," + self.mechanicID + "," + self.partID+ "," + str(self.quan_of_part) + "," + str(self.total_price) + "."

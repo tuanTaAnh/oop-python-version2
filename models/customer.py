@@ -75,5 +75,5 @@ class Customer:
     def set_phone(self, phone):
         self.phone = phone
 
-    def get_infor(self):
-        return self.customerID + "," + self.gender + "," + self.age + "," + self.address + "," + self.city +  "," + self.postalcode +  "," + self.country +  "," + self.phone +  "."
+    def __str__(self):
+        return self.customerID + "," + self.gender + "," + str(self.age) + "," + self.address + "," + self.city +  "," + self.postalcode +  "," + self.country +  "," + self.phone +  "."

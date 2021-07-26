@@ -1,5 +1,5 @@
 
-class Car:
+class Part:
     def __init__(self, partID, name, description, price):
         self.partID = partID
         self.name = name
@@ -40,5 +40,5 @@ class Car:
         self.price = price
 
 
-    def get_infor(self):
-        return self.partID + "," + self.name + "," + self.description + + "," + str(self.price) + "."
+    def __str__(self):
+        return self.partID + "," + self.name + "," + self.description + "," + str(self.price) + "."

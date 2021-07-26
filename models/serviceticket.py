@@ -2,7 +2,7 @@
 class ServiceTicket:
     def __init__(self, serticID, car, customer, datein, dateout, status, totalcost):
         self.serticID = serticID
-        self.carID = car.carID
+        self.carID = car.serialnum
         self.customerID = customer.customerID
         self.datein = datein
         self.dateout = dateout
@@ -67,5 +67,5 @@ class ServiceTicket:
         self.totalcost = totalcost
 
 
-    def get_infor(self):
+    def __str__(self):
         return self.serticID + "," + self.carID + "," + self.customerID + "," + self.datein + "," + self.dateout+ "," + self.status+ "," + str(self.totalcost) + "."

@@ -59,5 +59,5 @@ class Car:
         self.price = price
 
 
-    def get_infor(self):
-        return self.serialnum + "," + self.make + "," + self.model + "," + self.color + "," + self.year + + "," + str(self.price) + "."
+    def __str__(self):
+        return self.serialnum + "," + self.make + "," + self.model + "," + self.color + "," + str(self.year) + "," + str(self.price) + "."

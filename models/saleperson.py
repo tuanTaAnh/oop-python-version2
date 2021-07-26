@@ -52,5 +52,5 @@ class SalePerson:
     def set_photo(self, photo):
         self.photo = photo
 
-    def get_infor(self):
+    def __str__(self):
         return self.salemanID + "," + self.firstname + "," + self.lastname + "," + self.gender + "," + self.photo + "."

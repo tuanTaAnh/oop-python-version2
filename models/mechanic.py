@@ -40,5 +40,5 @@ class Mechanic:
         self.birthdate = birthdate
 
 
-    def get_infor(self):
+    def __str__(self):
         return self.mechanicID + "," + self.lastname + "," + self.firstname + "," + self.birthdate + "."

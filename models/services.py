@@ -1,5 +1,5 @@
 
-class Car:
+class Service:
     def __init__(self, serviceID, typ, price):
         self.serviceID = serviceID
         self.typ = typ
@@ -32,5 +32,5 @@ class Car:
         self.price = price
 
 
-    def get_infor(self):
+    def __str__(self):
         return self.serviceID + "," + self.typ + "," + str(self.price) + "."

@@ -2,8 +2,8 @@
 class Invoice:
     def __init__(self, invoiceID, car, saleperson, customer, date):
         self.invoiceID = invoiceID
-        self.carID = car.carID
-        self.salepersonID = saleperson.salepersonID
+        self.carID = car.serialnum
+        self.salepersonID = saleperson.salemanID
         self.customerID = customer.customerID
         self.date = date
 
@@ -49,5 +49,5 @@ class Invoice:
         self.date = date
 
 
-    def get_infor(self):
+    def __str__(self):
         return self.invoiceID + "," + self.carID + "," + self.salepersonID + "," + self.customerID + "," + self.date + "."
